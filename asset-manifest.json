@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rick-morty-graphql/static/css/main.e3467348.css",
+    "main.js": "/rick-morty-graphql/static/js/main.59fd4404.js",
+    "index.html": "/rick-morty-graphql/index.html",
+    "main.e3467348.css.map": "/rick-morty-graphql/static/css/main.e3467348.css.map",
+    "main.59fd4404.js.map": "/rick-morty-graphql/static/js/main.59fd4404.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e3467348.css",
+    "static/js/main.59fd4404.js"
+  ]
+}
