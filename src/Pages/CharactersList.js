@@ -1,19 +1,19 @@
-import { useCharacters } from "../hooks/useCharacters";
-import { Box } from "../Box/Box";
-import { useState } from "react";
-import { Loading } from "../Loading";
+import { useCharacters } from '../hooks/useCharacters';
+import { Box } from '../Box/Box';
+import { useState } from 'react';
+import { Loading } from '../Loading';
 
 import {
   HiOutlineChevronDoubleLeft,
   HiOutlineChevronDoubleRight,
-} from "react-icons/hi";
+} from 'react-icons/hi';
 import {
   CardItem,
   CardLink,
   CardImg,
   BtnItem,
   Btn,
-} from "./CharactersList.style";
+} from './CharactersList.style';
 
 export default function CharactersList() {
   const [page, setPage] = useState(1);
