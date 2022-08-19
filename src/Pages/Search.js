@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { useEpisode } from "../hooks/useCharacters";
-import { GoSearch } from "react-icons/go";
-import CardList from "../CardList";
-import { Loading } from "../Loading";
-import { Form, BtnSubmit, SubTitle } from "./Search.style";
+import { useState } from 'react';
+import { useEpisode } from '../hooks/useCharacters';
+import { GoSearch } from 'react-icons/go';
+import CardList from '../CardList';
+import { Loading } from '../Loading';
+import { Form, BtnSubmit, SubTitle } from './Search.style';
 export function Search() {
   const [id, setId] = useState(0);
   const [getEpisode, { error, loading, data }] = useEpisode(id);
@@ -16,7 +16,7 @@ export function Search() {
   return (
     <>
       <Form
-        onSubmit={(e) => {
+        onSubmit={e => {
           e.preventDefault();
           getEpisode();
 
@@ -28,7 +28,7 @@ export function Search() {
       </Form>
       {data ? (
         <>
-          <SubTitle>You choose {id} episode </SubTitle>
+          <SubTitle>All characters from {id} episode :</SubTitle>
 
           <CardList array={data?.episode?.characters} />
         </>
